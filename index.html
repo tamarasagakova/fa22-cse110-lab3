@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meeting Minutes</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="favicon.png">
+    <!-- Source [https://icons8.com/icon/25230/moizhusnain-corporation] -->
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <!-- Title -->
+      <h2>Project Management</h2>
+      <!-- Subtitle for the meeting section/the topic of the meeting -->
+      <h3>Role assignment</h3>
+
+      <nav>
+        <a href="#meeting-objective">Meeting discussion</a> |
+        <a href="#meeting-agenda">Meeting agenda</a> |
+        <a href="#meeting-graphics">Meeting graphics</a> |
+        <a href="#to-do-list">ToDo List</a> |
+        <a href="#contact">Contact</a> 
+      </nav><hr>
+    </header>
+
+    <main>
+      <div id="intro">
+        <p><b>Location:</b> 9500 Gilman Dr, La Jolla, CA 92093</p>
+        <!-- Subtitle for the date -->
+        <p><b>Date:</b> 9 October 2022</p>
+        <p><b>Time:</b> 15:00 PT</p>
+        <!-- Attendance list -->
+        <p><b>Present:</b></p>
+        <ul>
+          <li>Johnathan Katz</li>
+          <li>Anna Elrod</li>
+          <li>Michael Caddel</li>
+        </ul>
+        <p><b>Absent:</b></p>
+        <ul>
+          <li>Nathan Barlowe</li>
+        </ul>
+      </div><br>
+
+      <!-- Agenda of what the meeting will cover -->
+      <section id="meeting-agenda">
+        <h3>Meeting agenda</h3>
+        <p>This meeting will cover the new role assignment of the currenct project, as well as, 
+           budget discussion that was brought up during the previous meeting. </p>
+      </section><br>
+
+      <!-- Things that were unfinished business from last meeting + 
+      things that are new business that need to be talked about +
+      any miscellaneous comments / questions / concerns that anyone would like to bring up -->
+      <section id="meeting-objective">
+        <h3>Meeting discussion</h3>
+        <p>The second Group meeting is being help on October 9, 2022. There were several topics discussed during the meeting.
+           New project has been decided to be a CRUD application and should be developed in 2-3 months. The budget amount was 
+           not discussed due to absence of Nathan Barlowe. A leader was appointed to the project. From now on, the group leader 
+           is Johnathan Katz. Additioanlly, the group roles were rearranged for the new project. Anna Elrod is now a web designer 
+           while Michael Caddel is responsible for quality assurance. A question was brought up by Johnathan Katz regarding the 
+           time constraints of the new project; the question will be discussed during the next meeting. Next meeting will be held
+           next week; date and time to be announced.
+        </p>  
+      </section><br>
+
+      <!-- Pictures of any diagrams / architecture / things that were presented -->
+      <section id="meeting-graphics">
+        <h3>Meeting graphics</h3>
+
+        <img src='https://cdn.shopify.com/s/files/1/1091/5336/products/Timeline006Slide1_a4f72a81-4294-498f-9dda-835861754c43.jpeg?v=1460763615' alt="Timeline Templete" width="200" height="150">
+        <details>
+          <summary>Source</summary>
+          <p>https://images.app.goo.gl/Htx2r6i2Vocfvpgp6</p>
+        </details>
+
+        <figure>
+          <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <figcaption>Online sounds links [simpleguics2pygame]</figcaption>
+        </figure>
+  
+  
+        <figure>
+          <video width="210" height="210" controls>
+              <source type="video/mp4" src="video.mp4">
+              Your browser does not support the video tag.
+          </video>
+          <figcaption>Meeting Minutes Template [https://youtu.be/XtKvDNvwTR4]</figcaption>
+        </figure>  
+      </section><br>
+      
+
+      <section id="to-do-list">
+        <h3>ToDo List:</h3>
+        <ol>
+          <li>Make a chart reflecting the next stage of the project</li>
+          <li>Design a webpage</li>
+        </ol>
+      </section><br><br>
+
+
+      <!-- relative_url.htm is a random file name for the action, so I don't get errors when validating the site-->
+      <section id="contact">
+        <h3>Contact</h3>
+        <form action="relative_url.htm" method="post">
+        <fieldset>
+            <legend><i>Contact Form</i></legend>
+            <form-field-name>
+              <label for="name">Name*</label>
+              <input type="text" name="name" id="name" required>
+            </form-field-name><br>
+                                
+            <form-field-email>
+              <label for="email">Email*</label>
+              <input type="email" name="email" id="email" required>
+            </form-field-email><br>                   
+                                
+            <form-field-subject>
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject">
+            </form-field-subject><br>
+                                
+            <form-field-date>
+              <label for="date">Date: </label>
+              <input type="date" name="date" id="date">
+            </form-field-date><br>
+
+            <form-field-checkbox>
+              <label for="checkbox">Were you present at the meeting?</label>
+              <input type="checkbox" name="checkbox" id="checkbox">
+            </form-field-checkbox><br><br>
+
+            <form-field-nextmeeting>
+              <p>Should the next meeting be in the:</p>
+              <input type="radio" id="morning" name="time" value="morning">
+              <label for="morning">morning</label>
+              <input type="radio" id="afternoon" name="time" value="afternoon">
+              <label for="afternoon">afternoon</label>
+              <input type="radio" id="evening" name="time" value="evening">
+              <label for="evening">evening</label>
+            </form-field-nextmeeting><br><br><br>
+
+            <label for="day">Choose a day:</label>
+            <select name="day" id="day">
+              <option value="mon">Monday</option>
+              <option value="tues">Tuesday</option>
+              <option value="wed">Wednesday</option>
+              <option value="thur">Thursday</option>
+              <option value="fri">Friday</option>
+            </select><br><br>
+                                
+            <form-field-curious-question>
+              <label for="curious-question"> Should we take a day off? *</label>
+              <input list="options" name="curious-question" id="curious-question" required>
+                <datalist id="options">
+                  <option value="Yes">
+                  <option value="No">
+                </datalist>
+            </form-field-curious-question>
+          </fieldset>                    
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    
+    </main>
+
+    <footer>
+      <p>Created by Tamara Sagakova</p>
+    </footer>
+  </body>
+</html>
