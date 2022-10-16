@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab3
 
-Website URL: https://tamarasagakova.github.io/Lab2_Starter/
+Website URL: https://tamarasagakova.github.io/fa22-cse110-lab3/
