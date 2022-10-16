@@ -7,7 +7,7 @@ assignees: tamarasagakova
 
 ---
 
-## Describe the issue?
+## Describe the issue
 
 ## What needs to be done?
 
