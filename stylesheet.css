@@ -1,4 +1,4 @@
-/* General Style */
+/* General */
 * {
     margin: 0;
     padding: 0; 
@@ -16,15 +16,16 @@ a{
     text-decoration: none;
 }
 
-main h3{
+section h3{
     text-decoration: underline;
 }
 
 main h3:hover{
     font-size: x-large;
 }
+/* END -- General */
 
-/* Header Style*/
+/* Header */
 #header{
     font-size: 1.2em;
     color: rgb(0, 0, 0);
@@ -34,7 +35,6 @@ main h3:hover{
     font-family: 'Kanit', sans-serif;
 }
 
-
 .flex{
     display: flex;
     justify-content: center;
@@ -43,11 +43,23 @@ main h3:hover{
     padding-bottom: 0.3cm;
 }
 
-.flex a{
+.flex > a{
     color:white;
 }
 
-/* Into Style */
+a:hover{
+    color: hsl(0, 100%, 2%);
+}
+
+a:active{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 35%;
+}
+/* END -- Header */
+
+/* Into */
 .intro {
     border-style: solid;
     border-color: black;
@@ -59,18 +71,22 @@ main h3:hover{
 .padding{
     padding: 1em 1em 1em 2em;
 }
+/* END -- Into */
 
-/* Sections Style */
+/* General for sections */
+#meeting-objective,
+#meeting-agenda,
+#to-do-list{
+    margin: 0em 1em; /*the same as [0em 1em 0em 1em]*/
+}
+/* END -- General for sections */
+
+/* Meeting graphics */
 #meeting-graphics{
     margin-top: 0em;
     margin-right: 1em;
     margin-bottom: -1.5em;
     margin-left: 1em;
-}
-#meeting-objective,
-#meeting-agenda,
-#to-do-list{
-    margin: 0em 1em; /*the same as [0em 1em 0em 1em]*/
 }
 
 .grid{
@@ -90,6 +106,13 @@ main h3:hover{
     border: 2px solid lightblue;
 }
 
+video ~ figcaption > span,
+audio ~ figcaption > span{
+    color:#0063f7;
+    text-decoration: underline;
+}
+/* END -- Meeting graphics */
+
 #to-do-list ol{
     padding-top: 0rem;
     padding-right: 0rem;
@@ -97,24 +120,10 @@ main h3:hover{
     padding-left: 2rem;
 }
 
-p:hover span {
-    text-decoration:underline;
-} 
-
-a:hover{
-    color: hsl(0, 100%, 2%);
-}
-
-a:active{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 35%;
-}
-
+/* Contact */
 #contact{
-    margin-right: 3%;
-    margin-left: 1.5%;
+    margin-right: 4%;
+    margin-left: 2%;
 }
 
 legend {
@@ -127,16 +136,36 @@ legend {
     left: 10px;
 }
 
+input[type=text],
+input[type=email],
+textarea {
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #0063f7;
+    border-radius: 4px;
+    margin: 3px;
+} 
+
+input[type=date],
+input[list=options],
+select{
+    width: 10%;
+    padding: 12px;
+    border: 1px solid #0063f7;
+    border-radius: 4px;
+} 
+
 .button{
-    margin: 0.5em 0em;
+    margin: 1em 0.7em;
     height: 10mm;
     width: 20mm
 }
-.button:hover {
+button:hover {
     background-color: #7dacf3;
 }
+/* END -- Contact */
 
-/* Footer Style */
+/* Footer */
 .footer{
     position: sticky; 
     bottom: 0;
@@ -147,6 +176,16 @@ legend {
 footer #not-to-be-displayed{
     display: none;
 }
+
+p.author{
+    font-size: large;
+}
+
+hr + p{
+    text-decoration: dotted 1px underline;
+}
+/* END -- Footer */
+
 
 /* MEDIA QUERIES */
 /* Tablet */
@@ -172,3 +211,4 @@ footer #not-to-be-displayed{
         row-gap: 16px;
     }
 }
+/* END -- MEDIA QUERIES */
