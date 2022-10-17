@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Example of inline use of CSS -->
+    <style>
+      section h3{
+        color: darkblue;
+      }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -62,7 +68,7 @@
       any miscellaneous comments / questions / concerns that anyone would like to bring up -->
       <section id="meeting-objective">
         <h3>Meeting discussion</h3>
-        <p>The second Group meeting is being help on <span>October 9, 2022</span>. There were several topics discussed during the meeting.
+        <p>The second Group meeting is being help on October 9, 2022. There were several topics discussed during the meeting.
            New project has been decided to be a CRUD application and should be developed in 2-3 months. The budget amount was 
            not discussed due to absence of Nathan Barlowe. A leader was appointed to the project. From now on, <strong>the group leader 
            is Johnathan Katz</strong>. Additioanlly, the group roles were rearranged for the new project. Anna Elrod is now a web designer 
@@ -89,7 +95,7 @@
               <source src='http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a'>
               Your browser does not support the audio element.
             </audio>
-            <figcaption>Online sounds links [simpleguics2pygame]</figcaption>
+            <figcaption>Online sounds links [<span>simpleguics2pygame</span>]</figcaption>
           </figure>
     
     
@@ -98,7 +104,7 @@
                 <source type="video/mp4" src="video.mp4">
                 Your browser does not support the video tag.
             </video>
-            <figcaption>Meeting Minutes Template [https://youtu.be/XtKvDNvwTR4]</figcaption>
+            <figcaption>Meeting Minutes Template [<span>https://youtu.be/XtKvDNvwTR4</span>]</figcaption>
           </figure>  
         </div>
       </section><br>
@@ -120,22 +126,22 @@
         <fieldset id="field">
             <legend><i>Contact Form</i></legend>
             <form-field-name>
-              <label for="name">Name*</label>
+              <label for="name">Name* :</label>
               <input type="text" name="name" id="name" required>
             </form-field-name><br>
                                 
             <form-field-email>
-              <label for="email">Email*</label>
+              <label for="email">Email* :</label>&nbsp;
               <input type="email" name="email" id="email" required>
             </form-field-email><br>                   
                                 
             <form-field-subject>
-              <label for="subject">Subject</label>
+              <label for="subject">Subject:</label>
               <input type="text" name="subject" id="subject">
             </form-field-subject><br>
                                 
             <form-field-date>
-              <label for="date">Date: </label>
+              <label for="date">Date:</label> &nbsp;&nbsp;&nbsp;&nbsp;
               <input type="date" name="date" id="date">
             </form-field-date><br><br>
 
@@ -145,16 +151,19 @@
             </form-field-text><br><br>
 
             <form-field-checkbox>
-              <label for="checkbox">Were you present at the meeting?</label>
-              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox">Which meeting did you attend? (select all that apply)</label><br>
+              <input type="checkbox" name="monday" id="monday">
+              <label for="monday">Monday</label> &nbsp;
+              <input type="checkbox" name="friday" id="friday">
+              <label for="friday">Friday</label>
             </form-field-checkbox><br><br>
 
             <form-field-nextmeeting>
               <p>Should the next meeting be in the:</p>
               <input type="radio" id="morning" name="time" value="morning">
-              <label for="morning">morning</label>
+              <label for="morning">morning</label> &nbsp;
               <input type="radio" id="afternoon" name="time" value="afternoon">
-              <label for="afternoon">afternoon</label>
+              <label for="afternoon">afternoon</label> &nbsp;
               <input type="radio" id="evening" name="time" value="evening">
               <label for="evening">evening</label>
             </form-field-nextmeeting><br><br>
@@ -185,7 +194,7 @@
 
     <footer class="footer">
       <hr>
-      <p>Created by Tamara Sagakova</p>
+      <p class="author">Created by Tamara Sagakova</p>
       <p id="not-to-be-displayed">Only can be found in the HTML file :)</p>
     </footer>
   </body>
