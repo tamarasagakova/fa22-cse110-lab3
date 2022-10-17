@@ -1,0 +1,174 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;   
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+a{
+    text-decoration: none;
+}
+
+main h3{
+    text-decoration: underline;
+}
+
+main h3:hover{
+    font-size: x-large;
+}
+
+/* Header Style*/
+#header{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(0.25turn, #0063f7, #7dacf3);
+    text-align: center;
+    margin: auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 0.3cm;
+}
+
+.flex a{
+    color:white;
+}
+
+/* Into Style */
+.intro {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 0.3em;
+    margin: 0.5em 0.5em 0 0.5em;
+} 
+
+.padding{
+    padding: 1em 1em 1em 2em;
+}
+
+/* Sections Style */
+#meeting-graphics{
+    margin-top: 0em;
+    margin-right: 1em;
+    margin-bottom: -1.5em;
+    margin-left: 1em;
+}
+#meeting-objective,
+#meeting-agenda,
+#to-do-list{
+    margin: 0em 1em; /*the same as [0em 1em 0em 1em]*/
+}
+
+.grid{
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: [first] auto [second] auto [third] auto;
+    grid-template-rows: [first] auto;
+    column-gap: 16px;
+}
+
+#item1,
+#item2,
+#item3{
+    display: inline-block;
+    padding: 2mm; 
+    border: 2px solid lightblue;
+}
+
+#to-do-list ol{
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+}
+
+p:hover span {
+    text-decoration:underline;
+} 
+
+a:hover{
+    color: hsl(0, 100%, 2%);
+}
+
+a:active{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 35%;
+}
+
+#contact{
+    margin-right: 3%;
+    margin-left: 1.5%;
+}
+
+legend {
+    margin-left: calc(50% - 55px);
+}
+
+#field{
+    padding: 1em;
+    position: relative;
+    left: 10px;
+}
+
+.button{
+    margin: 0.5em 0em;
+    height: 10mm;
+    width: 20mm
+}
+.button:hover {
+    background-color: #7dacf3;
+}
+
+/* Footer Style */
+.footer{
+    position: sticky; 
+    bottom: 0;
+    text-align: center;
+    background: linear-gradient(0.25turn, #0063f7, #7dacf3);
+}
+
+footer #not-to-be-displayed{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+/* Tablet */
+@media all and (min-width: 617px) and (max-width: 851px) {
+    .grid{
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: [first] auto [second] auto;
+        grid-template-rows: [first] auto [second] auto;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+}
+
+/* Phone */
+@media all and (max-width: 616px) {
+    .grid{
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: [first] auto ;
+        grid-template-rows: [first] auto [second] auto [third] auto;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+}

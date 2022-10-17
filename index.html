@@ -7,41 +7,47 @@
     <title>Meeting Minutes</title>
     <link rel="shortcut icon" href="favicon.png">
     <!-- Source [https://icons8.com/icon/25230/moizhusnain-corporation] -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Meeting Minutes</h1>
       <!-- Title -->
       <h2>Project Management</h2>
       <!-- Subtitle for the meeting section/the topic of the meeting -->
-      <h3>Role assignment</h3>
+      <h3>~ Role assignment ~</h3>
 
-      <nav>
-        <a href="#meeting-objective">Meeting discussion</a> |
-        <a href="#meeting-agenda">Meeting agenda</a> |
-        <a href="#meeting-graphics">Meeting graphics</a> |
-        <a href="#to-do-list">ToDo List</a> |
-        <a href="#contact">Contact</a> 
+      <nav class="flex">
+        <a class="nav-links" href="#meeting-objective">Meeting discussion</a> |
+        <a class="nav-links" href="#meeting-agenda">Meeting agenda</a> |
+        <a class="nav-links" href="#meeting-graphics">Meeting graphics</a> |
+        <a class="nav-links" href="#to-do-list">ToDo List</a> |
+        <a class="nav-links" href="#contact">Contact</a> 
       </nav><hr>
     </header>
 
     <main>
-      <div id="intro">
-        <p><b>Location:</b> 9500 Gilman Dr, La Jolla, CA 92093</p>
-        <!-- Subtitle for the date -->
-        <p><b>Date:</b> 9 October 2022</p>
-        <p><b>Time:</b> 15:00 PT</p>
-        <!-- Attendance list -->
-        <p><b>Present:</b></p>
-        <ul>
-          <li>Johnathan Katz</li>
-          <li>Anna Elrod</li>
-          <li>Michael Caddel</li>
-        </ul>
-        <p><b>Absent:</b></p>
-        <ul>
-          <li>Nathan Barlowe</li>
-        </ul>
+      <div class="intro">
+        <div class="padding">
+          <p><b>Location:</b> 9500 Gilman Dr, La Jolla, CA 92093</p>
+          <!-- Subtitle for the date -->
+          <p><b>Date:</b> 9 October 2022</p>
+          <p><b>Time:</b> 15:00 PT</p>
+          <!-- Attendance list -->
+          <p><b>Present:</b></p>
+          <ul>
+            <li>Johnathan Katz</li>
+            <li>Anna Elrod</li>
+            <li>Michael Caddel</li>
+          </ul>
+          <p><b>Absent:</b></p>
+          <ul>
+            <li>Nathan Barlowe</li>
+          </ul>
+        </div>
       </div><br>
 
       <!-- Agenda of what the meeting will cover -->
@@ -69,29 +75,32 @@
       <!-- Pictures of any diagrams / architecture / things that were presented -->
       <section id="meeting-graphics">
         <h3>Meeting graphics</h3>
+        <div class="grid">
+          <div id="item1">
+            <img src='https://cdn.shopify.com/s/files/1/1091/5336/products/Timeline006Slide1_a4f72a81-4294-498f-9dda-835861754c43.jpeg?v=1460763615' alt="Timeline Templete" width="200" height="150">
+            <details>
+              <summary>Source</summary>
+              <p>https://images.app.goo.gl/Htx2r6i2Vocfvpgp6</p>
+            </details>
+          </div>
 
-        <img src='https://cdn.shopify.com/s/files/1/1091/5336/products/Timeline006Slide1_a4f72a81-4294-498f-9dda-835861754c43.jpeg?v=1460763615' alt="Timeline Templete" width="200" height="150">
-        <details>
-          <summary>Source</summary>
-          <p>https://images.app.goo.gl/Htx2r6i2Vocfvpgp6</p>
-        </details>
-
-        <figure>
-          <audio controls>
-            <source src='http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a'>
-            Your browser does not support the audio element.
-          </audio>
-          <figcaption>Online sounds links [simpleguics2pygame]</figcaption>
-        </figure>
-  
-  
-        <figure>
-          <video width="210" height="210" controls>
-              <source type="video/mp4" src="video.mp4">
-              Your browser does not support the video tag.
-          </video>
-          <figcaption>Meeting Minutes Template [https://youtu.be/XtKvDNvwTR4]</figcaption>
-        </figure>  
+          <figure id="item2">
+            <audio controls>
+              <source src='http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a'>
+              Your browser does not support the audio element.
+            </audio>
+            <figcaption>Online sounds links [simpleguics2pygame]</figcaption>
+          </figure>
+    
+    
+          <figure id="item3">
+            <video width="210" height="210" controls>
+                <source type="video/mp4" src="video.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Meeting Minutes Template [https://youtu.be/XtKvDNvwTR4]</figcaption>
+          </figure>  
+        </div>
       </section><br>
       
 
@@ -101,14 +110,14 @@
           <li>Make a chart reflecting the next stage of the project</li>
           <li>Design a webpage</li>
         </ol>
-      </section><br><br>
+      </section><br>
 
 
       <!-- relative_url.htm is a random file name for the action, so I don't get errors when validating the site-->
       <section id="contact">
         <h3>Contact</h3>
         <form action="relative_url.htm" method="post">
-        <fieldset>
+        <fieldset id="field">
             <legend><i>Contact Form</i></legend>
             <form-field-name>
               <label for="name">Name*</label>
@@ -148,7 +157,7 @@
               <label for="afternoon">afternoon</label>
               <input type="radio" id="evening" name="time" value="evening">
               <label for="evening">evening</label>
-            </form-field-nextmeeting><br><br><br>
+            </form-field-nextmeeting><br><br>
 
             <label for="day">Choose a day:</label>
             <select name="day" id="day">
@@ -168,14 +177,16 @@
                 </datalist>
             </form-field-curious-question>
           </fieldset>                    
-          <button type="submit">Submit</button>
+          <button class="button" type="submit">Submit</button>
         </form>
       </section>
     
     </main>
 
-    <footer>
+    <footer class="footer">
+      <hr>
       <p>Created by Tamara Sagakova</p>
+      <p id="not-to-be-displayed">Only can be found in the HTML file :)</p>
     </footer>
   </body>
 </html>
